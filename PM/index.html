@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>From</title>
+</head>
+
+<body>
+    <div class="h1">Form Validation</div>
+    <div class="container">
+
+        <form method="GET">
+
+            <div class="form-group">
+                <label for='name'>Name: </label>
+                <input id='name' type="text" name="name" class="form-control" required placeholder="Enter your Name Minimum 5 Characters">
+            </div>
+            <div class="form-group">
+                <label for='age'>Age: </label>
+                <input id='age' type="age" name="age" class="form-control" min="0" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter Your Username"
+                    class="form-control" minlength="4" maxlength="15">
+            </div>
+
+            
+            <div class="form-group">
+                
+                <label for="username">Password:</label>
+                <input type="text" id="password" name="password" required 
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,25}$" 
+                    placeholder="(1)Uppercase, (1)Special Characters, (1)Number, and Lowercase" class="form-control"
+                    minlength="6" maxlength="25">
+            </div>
+
+            <!-- <div class = "input-container">
+                <input type="password" />
+                <i class = "material-icons visibility">visibility_off</i>
+        
+
+            </div> -->
+
+            <div class="form-group">
+                <label for="username">About Me:</label>
+                <input type="textarea" id="aboutMe" name="aboutMe" required
+                    placeholder="Something about your self" class="form-control"
+                    maxlength="250">
+            </div>
+
+            <div class="form-group">
+                <label for="regex">Robot Check:</label>
+                <input type="text" id="regex" required pattern="I am a Human" title="Please enter 'I am a Human'"
+                placeholder="I am a Human">
+            </div>
+            
+
+            <!-- <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
