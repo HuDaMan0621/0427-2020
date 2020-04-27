@@ -1,0 +1,28 @@
+.body{
+    background-color: white;
+    border: 1px pink solid;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+}
+
+/* .container-lg{
+    background-color: pink;
+    padding-top: 200px;
+} */
+
+.nav{
+    background: white;
+    /* border-color: blue 1px solid; */
+    border: blue 1px solid;
+    /* width: 100%; */
+}
+
+.container{
+    border: grey solid 1px;
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
